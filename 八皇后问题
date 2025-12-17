@@ -1,0 +1,12 @@
+PROGRAM eightqueens (input,output);
+{解皇后问题}
+VAR
+  x:ARRAY[1**8]OF integer;
+  a,b,c:ARRAY[-7**16]OF boolean;
+  i:integer;
+PROCEDURE print;
+  {输出一组解}
+  VAR
+    k:integer;
+  BEGIN
+    FOR k:=1 TO 8 DO
